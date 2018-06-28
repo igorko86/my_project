@@ -1,0 +1,118 @@
+body{
+    max-width: 980px;
+    margin: 0 auto;
+   
+}
+li{
+	list-style-type: none;
+	
+}
+a{
+	text-decoration: none;
+}
+h2{
+    border-bottom: 1px solid #00008B;
+    margin-left: 5px;
+    color:#00008B;;
+}
+main,section{
+    border-bottom: 1px solid #00008B;
+}
+   /** header**/
+header{
+    width: 100%;
+    height: 465px;
+	background-image: url("../img/header/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.div-form{
+	margin: 5px;
+	float: right;
+	box-sizing: border-box;
+}
+.search{
+	border: 3px solid black;
+	background-color: white;
+	border-radius: 10px;
+}
+ .div-form input{
+	border-color: white;
+	padding-top: 3px;
+}
+.div-sign-up {
+	float: right;
+}
+.div-sign-up a{
+	color: white;
+	
+}
+.div-sign-up a span{
+	margin: 5px;
+}
+.header-foto{
+	max-width: 100%;
+	min-width: 530px;
+	height: 300px;
+	display: flex;
+	
+}
+.header-foto img{
+	max-width: 300px;
+	margin-left: 10px;
+	
+}
+.header-foto h1{
+	align-self: center;
+	font-family: san-serif;
+	display: inline-block;
+	margin-left: 10px;
+	color: white;
+	margin-bottom:-80px;
+}
+.header-div-empty{
+	height: 230px;
+}
+.header-nav{
+	width: 100%;
+	margin-top: -50px;
+}
+.header-nav ul{
+	display: flex;
+	justify-content: flex-end;
+}
+.header-nav ul li{
+	width: 80px;
+	background-color: grey;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0 0 30px grey;
+	display: flex;
+	justify-content: center;
+	margin-right: 20px;
+}
+
+.header-nav ul li a{
+	font-size: 1.2rem;
+	color: blue;
+}
+
+.header-nav ul li:hover{
+	background-color: #27408B;
+}
+.header-nav ul li a:hover{
+	color: white;
+	font-weight: bold;
+}
+/** main **/
+.header-div-empty2{
+    border-bottom: 2px solid #00008B;
+    height: 70px;
+}
+main .block{
+    width: 300px;
+}
+main .block img{
+    width: 100%;
+}
