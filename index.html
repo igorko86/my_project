@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-		<div class="div-form">
+       <div class="background"></div>
+       <div class="wraper-header">
+		<div class="wraper-form">
 			<form>
 				<div class="search">
 					&#128269;
@@ -17,19 +19,22 @@
 					<input type="submit" value="ok">
 				</div>
 			</form>
-			<div class="div-sign-up">
+			<div class="block-sign-up">
 				<a href="forma-login.html">Вхід <span> &frasl; </span></a>
 				<a href="forma-signUp.html"> Реєстрація</a>
 			</div>   
 		</div>
-		<div class="header-div-empty"></div>
+	
 		<div class="header-foto">
-			<img src="img/header/igor-mocherad-foto.jpg" alt="Фотографія блогера Ігора Мочерада"> 
+			<div class="img"> 
+				<img src="img/header/igor-mocherad-foto.jpg" alt="Фотографія блогера Ігора Мочерада"> 
+			</div>
 			<h1>Ігор Мочерад</h1>
 		</div>
-		<nav class="header-nav">
+		<nav class="wraper-nav">
+		    <div class="burger"><span>&#9776;</span></div>
 			<ul>
-				<li style="background-color:#27408B;"><a href="#" style="color: white;font-weight: bold;">головна</a></li>
+				<li><a href="#">головна</a></li>
 				<li><a href="news.html">новини</a></li>
 				<li><a href="gallery.html">галерея</a></li>
 				<li><a href="video.html">відео</a></li>
@@ -37,68 +42,95 @@
 				<li><a href="index.html#contacts">контакти</a></li>
 			</ul>
 		</nav> 
+		</div> 
     </header>
-    <main>
-        <div class="header-div-empty2"></div>
+    <main id="main">
         <section>
             <h2>новини</h2>
+                <article>
+                    <div class="wraper-date">
+                         <h5>18 червня 2018</h5>   
+                    </div>
+                    <div class="wraper-block">   
+                        <div class="block ">
+                            <a href="getTranschIMF.html">
+                                <img src="img/news/news-transch.jpg" alt="Гроші траншу МВФ" title="Гроші від МВФ">Для отримання траншу МВФ потрібно...
+                            </a>
+                        </div>
+                        <div class="block">
+                            <a href="spainMorocco.html">
+                                <img src="img/news/news-football.jpg" alt="Іспанія зіграла в нічию з Марокко" title="Іспанія-Марокко">ЧС-2018 Іспанія – Марокко: "червона фурія" зіграла в...
+                            </a>
+                        </div>
+                    </div>  
+                </article>
+                <article>
+                    <div class="wraper-date">
+                        <h5>17 червня 2018</h5>
+                    </div>
+                    <div class="wraper-block">
+                        <div class="block three-blocks">
+                            <a href="eurovision.html">
+                                <img src="img/news/news-muzic.jpg" alt="Євробачення" title="де відбудеться Євробачення">Пісенний конкурс Євробачення у 2019 відбудеться...
+                            </a>
+                        </div>
+                         <div class="block three-blocks">
+                            <a href="harleyDavidson.html">
+                                <img src="img/news/news-harleyDavidson.jpg" alt="Значок Харлей Девідсон" title="Девідсон має намір перенести своє виробництво">Харлей Девідсон має намір перенести своє виробництво в Європу через...
+                            </a>
+                        </div>
+                        <div class="block three-blocks">
+                            <a href="coctail.html">
+                                <img src="img/news/news-coctail.jpg" alt="Коктель з фруктами" title="Як приготувати ефективний коктейль">Як приготувати ефективний коктейль для схудення...
+                            </a>
+                        </div>
+                    </div>       
+                </article>
+                <article>
+                    <div class="wraper-date">
+                        <h5>16 червня 2018</h5>
+                    </div>
+                    <div class="wraper-block">
+                        <div class="block one-block">
+                            <a href="runner.html">
+                                <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
+                            </a>
+                        </div>
+                </article>
+                <article>
+                    <div class="wraper-date">
+                        <h5>15 червня 2018</h5>
+                    </div>
+                    <div class="wraper-block">
+                        <div class="block">
+                            <a href="runner.html">
+                                <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
+                            </a>
+                        </div>
+                        <div class="block">
+                            <a href="apple.html">
+                                <img src="img/news/news-apple.jpg" alt="Телефон apple" title="apple може презентувати новий бюджетний">Apple може презентувати новий бюджетний iPhone 9...
+                            </a>
+                        </div>
+                        <div class="block">
+                            <a href="nigeriaArgentina.html">
+                                <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            </a>
+                        </div>
+                         <div class="block">
+                            <a href="nigeriaArgentina.html">
+                                <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            </a>
+                        </div>
+                    </div>
+                </article>
             <div>
-                <span>18 червня 2018</span>
-                <div class="block">
-                    <a href="getTranschIMF.html">
-                        <img src="img/news/news-transch.jpg" alt="Гроші траншу МВФ" title="Гроші від МВФ">Для отримання траншу МВФ потрібно...
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="spainMorocco.html">
-                        <img src="img/news/news-football.jpg" alt="Іспанія зіграла в нічию з Марокко" title="Іспанія-Марокко">ЧС-2018 Іспанія – Марокко: "червона фурія" зіграла в...
-                    </a>
-                </div>
-            </div>
-            <div>
-                <span>17 червня 2018</span>
-                <div class="block">
-                    <a href="eurovision.html">
-                        <img src="img/news/news-muzic.jpg" alt="Євробачення" title="де відбудеться Євробачення">Пісенний конкурс Євробачення у 2019 відбудеться...
-                    </a>
-                </div>
-            </div>
-            <div>
-                <span>16 червня 2018</span>
-                <div class="block">
-                    <a href="harleyDavidson.html">
-                        <img src="img/news/news-harleyDavidson.jpg" alt="Значок Харлей Девідсон" title="Девідсон має намір перенести своє виробництво">Харлей Девідсон має намір перенести своє виробництво в Європу через...
-                    </a>
-                </div>
-                 <div class="block">
-                    <a href="coctail.html">
-                        <img src="img/news/news-coctail.jpg" alt="Коктель з фруктами" title="Як приготувати ефективний коктейль">Як приготувати ефективний коктейль для схудення...
-                    </a>
-                </div>
-            
-                <div class="block">
-                    <a href="runner.html">
-                        <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
-                    </a>
-                </div>
-                 <div class="block">
-                    <a href="apple.html">
-                        <img src="img/news/news-apple.jpg" alt="Телефон apple" title="apple може презентувати новий бюджетний">Apple може презентувати новий бюджетний iPhone 9...
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="nigeriaArgentina.html">
-                        <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
-                    </a>
-                </div>
-            </div>
-            <div>
-                <h3><a href="news.html">всі новини <span>&raquo; &raquo;</span></a></h3>    
+                <h5><a href="news.html"> &#171; &#171; всі новини &raquo; &raquo;</a></h5>    
             </div>
         </section>
         <section>
             <h2>галерея</h2> 
-            <div>
+            <div class="wrap-gallery">
                 <img src="img/gallery/news-transch.jpg" alt="Гроші траншу МВФ">
                 <img src="img/gallery/news-football.jpg" alt="Команда Іспанія">
                 <img src="img/gallery/news-cup.jpg" alt="Кубок Світу">
@@ -107,7 +139,7 @@
                 <img src="img/gallery/news-harleyDavidson.jpg" alt="Значок Херлі Девідсон">
             </div>
             <div>
-                <h3><a href="gallery.html">всі фотографії <span>&raquo; &raquo;</span></a></h3>   
+                <h5><a href="gallery.html">&#171; &#171; всі фотографії &raquo; &raquo;</a></h5>   
             </div>
         </section>
         <section>
@@ -120,7 +152,7 @@
                 <iframe src="https://www.youtube.com/embed/OodB6Yz1yxU"></iframe>
                 <iframe src="https://www.youtube.com/embed/P_xd-Ocjns0"></iframe>
             </div>            <div>
-               <h3><a href="video.html">все відео <span>&raquo; &raquo;</span></a></h3>
+               <h5><a href="video.html">&#171; &#171; все відео &raquo; &raquo; </a></h5>
             </div>
         </section>
     </main>
