@@ -1,68 +1,153 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ігор Мочерад - блогер</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
-</head>
-<body>
-    <header>
-       <div class="background"></div>
-       <div class="wraper-header">
-		<div class="wraper-form">
-			<form>
-				<div class="search">
-					&#128269;
-					<input type="search" name="search" placeholder="пошук">
-					<input type="submit" value="ok">
-				</div>
-			</form>
-			<div class="block-sign-up">
-				<a href="forma-login.html">Вхід <span> &frasl; </span></a>
-				<a href="forma-signUp.html"> Реєстрація</a>
-			</div>   
-		</div>
-	
-		<div class="header-foto">
-			<div class="img"> 
-				<img src="img/header/igor-mocherad-foto.jpg" alt="Фотографія блогера Ігора Мочерада"> 
-			</div>
-			<h1>Ігор Мочерад</h1>
-			<div class="burger"><span>&#9776;</span></div>
-		</div>
-		<nav class="wraper-nav">
-		    <ul>
-				<li><a href="#">головна</a></li>
-				<li><a href="news.html">новини</a></li>
-				<li><a href="gallery.html">галерея</a></li>
-				<li><a href="video.html">відео</a></li>
-				<li><a href="about.html">про мене</a></li>
-				<li><a href="index.html#contacts">контакти</a></li>
-			</ul>
-		</nav> 
-		</div> 
-    </header>
-    <main id="main">
-        <section>
-            <h2>новини</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ігор Мочерад - блогер</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="stylesheet" href="css/index-form.css" type="text/css">
+    </head>
+    <body>
+        <div class="wraper-modal-login">
+            <div class="wraper-form">
+                <div class="wraper-from-header">
+                    <h5>Вхід</h5>
+                    <div class="wraper-icon-login">
+                        <span>&times;</span>
+                    </div>
+                </div>
+                <form method="post" action="#" class="login-form ">
+                    <label>
+                        Логін, еле. пошта:
+          <input type="text" name="usernameOrEmail" placeholder="Логін, еле. пошта" required>
+                    </label>
+                    <label>
+                        Пароль:
+            <input type="password" name="password" class="inp" placeholder="********" required>
+                    </label>
+                    <a href="#">Забули Ваш пароль?</a>
+                    <br>
+                    <div class="footer-form">
+                        <p class="hideModal">Відмінити</p>
+                        <input type="submit" value="Submit" id="but-login">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="wraper-modal-signUp">
+            <div class="wraper-form">
+                <div class="wraper-from-header">
+                    <h5>Реєстрація</h5>
+                    <div class="wrap-icon-signUp">
+                        <span>&times;</span>
+                    </div>
+                </div>
+                <form method="post" action="https://formspree.io/mocherad86@gmail.com" class="sign-up-form">
+                    <label class="first-name">
+                        Ім'я:
+                    <input type="text" name="first-name" placeholder="Ім'я" required>
+                    </label>
+                    <label class="last-name">
+                        Фамілія:
+                    <input type="text" name="last-name" placeholder="Фамілія" required>
+                    </label>
+                    <label>
+                        Логін:
+                    <input type="text" name="login" placeholder="Логін" required>
+                    </label>
+                    <label>
+                        Електронна пошта:
+                    <input type="email" name="email" placeholder="електронна пошта" required>
+                    </label>
+                    <label>
+                        Пароль:
+                    <input type="password" name="password" placeholder="********" required>
+                    </label>
+                    <label>
+                        Повторити пароль:
+                    <input type="password" name="password" placeholder="********" required>
+                    </label>
+                    <a href="#" class="register">Ви зареєстровані?</a>
+                    <div class="footer-form">
+                        <p class="hideModal">Відмінити</p>
+                        <input type="submit" value="Submit" class="inp-sub">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <header>
+            <div class="background"></div>
+            <div class="wraper-header">
+                <div class="wraper-form">
+                    <form>
+                        <div class="search">
+                            &#128269;<input type="search" name="search" placeholder="пошук">
+                            <input type="submit" value="ok">
+                        </div>
+                    </form>
+                    <div class="block-sign-up">
+                        <a href="forma-login.html">
+                            Вхід <span>&frasl;</span>
+                        </a>
+                        <a href="forma-signUp.html" class=".show-signUp">Реєстрація</a>
+                    </div>
+                </div>
+                <div class="header-foto">
+                    <div class="img">
+                        <img src="img/header/igor-mocherad-foto.jpg" alt="Фотографія блогера Ігора Мочерада">
+                    </div>
+                    <h1>Ігор Мочерад</h1>
+                    <div class="burger">
+                        <span>&#9776;</span>
+                    </div>
+                </div>
+                <nav class="wraper-nav">
+                    <ul>
+                        <li>
+                            <a href="#">головна</a>
+                        </li>
+                        <li>
+                            <a href="news.html">новини</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">галерея</a>
+                        </li>
+                        <li>
+                            <a href="video.html">відео</a>
+                        </li>
+                        <li>
+                            <a href="about.html">про мене</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contacts">контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="main">
+            <section>
+                <h2>новини</h2>
                 <article>
                     <div class="wraper-date">
-                         <h5>18 червня 2018</h5>   
+                        <h5>18 червня 2018</h5>
                     </div>
-                    <div class="wraper-block">   
+                    <div class="wraper-block">
                         <div class="block ">
                             <a href="getTranschIMF.html">
                                 <img src="img/news/news-transch.jpg" alt="Гроші траншу МВФ" title="Гроші від МВФ">Для отримання траншу МВФ потрібно...
+                            
                             </a>
                         </div>
                         <div class="block">
                             <a href="spainMorocco.html">
                                 <img src="img/news/news-football.jpg" alt="Іспанія зіграла в нічию з Марокко" title="Іспанія-Марокко">ЧС-2018 Іспанія – Марокко: "червона фурія" зіграла в...
+                            
                             </a>
                         </div>
-                    </div>  
+                    </div>
                 </article>
                 <article>
                     <div class="wraper-date">
@@ -72,19 +157,22 @@
                         <div class="block three-blocks">
                             <a href="eurovision.html">
                                 <img src="img/news/news-muzic.jpg" alt="Євробачення" title="де відбудеться Євробачення">Пісенний конкурс Євробачення у 2019 відбудеться...
+                            
                             </a>
                         </div>
-                         <div class="block three-blocks">
+                        <div class="block three-blocks">
                             <a href="harleyDavidson.html">
                                 <img src="img/news/news-harleyDavidson.jpg" alt="Значок Харлей Девідсон" title="Девідсон має намір перенести своє виробництво">Харлей Девідсон має намір перенести своє виробництво в Європу через...
+                            
                             </a>
                         </div>
                         <div class="block three-blocks">
                             <a href="coctail.html">
                                 <img src="img/news/news-coctail.jpg" alt="Коктель з фруктами" title="Як приготувати ефективний коктейль">Як приготувати ефективний коктейль для схудення...
+                            
                             </a>
                         </div>
-                    </div>       
+                    </div>
                 </article>
                 <article>
                     <div class="wraper-date">
@@ -94,8 +182,10 @@
                         <div class="block one-block">
                             <a href="runner.html">
                                 <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
+                            
                             </a>
                         </div>
+                    </div>
                 </article>
                 <article>
                     <div class="wraper-date">
@@ -105,46 +195,54 @@
                         <div class="block">
                             <a href="runner.html">
                                 <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
+                            
                             </a>
                         </div>
                         <div class="block">
                             <a href="apple.html">
                                 <img src="img/news/news-apple.jpg" alt="Телефон apple" title="apple може презентувати новий бюджетний">Apple може презентувати новий бюджетний iPhone 9...
+                            
                             </a>
                         </div>
                         <div class="block">
                             <a href="nigeriaArgentina.html">
                                 <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            
                             </a>
                         </div>
-                         <div class="block">
+                        <div class="block">
                             <a href="nigeriaArgentina.html">
                                 <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            
                             </a>
                         </div>
                     </div>
                 </article>
-            <div>
-                <h5><a href="news.html"> &#171; &#171; всі новини &raquo; &raquo;</a></h5>    
-            </div>
-        </section>
-        <section>
-            <h2>галерея</h2> 
-            <div class="wraper-gallery">
-                <img src="img/gallery/news-transch.jpg" alt="Гроші траншу МВФ">
-                <img src="img/gallery/news-football.jpg" alt="Команда Іспанія">
-                <img src="img/gallery/news-cup.jpg" alt="Кубок Світу">
-                <img src="img/gallery/news-apple.jpg" alt="Мобільний телефон">
-                <img src="img/gallery/news-runner.jpg" alt="Бігун біжить по сходах">
-                <img src="img/gallery/news-harleyDavidson.jpg" alt="Значок Херлі Девідсон">
-            </div>
-            <div>
-                <h5><a href="gallery.html">&#171; &#171; всі фотографії &raquo; &raquo;</a></h5>   
-            </div>
-        </section>
-        <section>
-            <h2>відео</h2>
-                <div class ="wraper-videos">
+                <div>
+                    <h5>
+                        <a href="news.html">&#171;&#171;всі новини &raquo;&raquo;</a>
+                    </h5>
+                </div>
+            </section>
+            <section>
+                <h2>галерея</h2>
+                <div class="wraper-gallery">
+                    <img src="img/gallery/news-transch.jpg" alt="Гроші траншу МВФ">
+                    <img src="img/gallery/news-football.jpg" alt="Команда Іспанія">
+                    <img src="img/gallery/news-cup.jpg" alt="Кубок Світу">
+                    <img src="img/gallery/news-apple.jpg" alt="Мобільний телефон">
+                    <img src="img/gallery/news-runner.jpg" alt="Бігун біжить по сходах">
+                    <img src="img/gallery/news-harleyDavidson.jpg" alt="Значок Херлі Девідсон">
+                </div>
+                <div>
+                    <h5>
+                        <a href="gallery.html">&#171;&#171;всі фотографії &raquo;&raquo;</a>
+                    </h5>
+                </div>
+            </section>
+            <section>
+                <h2>відео</h2>
+                <div class="wraper-videos">
                     <div class="wraper-video-big">
                         <iframe src="https://www.youtube.com/embed/tAGnKpE4NCI"></iframe>
                     </div>
@@ -152,30 +250,51 @@
                         <iframe src="https://www.youtube.com/embed/yXEp3x8-y5A"></iframe>
                         <iframe src="https://www.youtube.com/embed/OodB6Yz1yxU"></iframe>
                         <iframe src="https://www.youtube.com/embed/P_xd-Ocjns0"></iframe>
-                    </div>   
+                    </div>
                 </div>
                 <div>
-                   <h5><a href="video.html">&#171; &#171; все відео &raquo; &raquo; </a></h5>
+                    <h5>
+                        <a href="video.html">&#171;&#171;все відео &raquo;&raquo;</a>
+                    </h5>
                 </div>
-        </section>
-    </main>
-    <footer>
-        <h2>Контакти</h2>
-        <div class="wraper-footer">
-            <div id="contacts" class="wraper-contacts">
-                <p><strong>Ігор Мочерад</strong></p>
-                <p><strong>Електронна пошта:</strong> mocherad86@gmail.com</p>
-                <p><strong>Тел:</strong> 09711112334</p>
+            </section>
+            <section>
+                <h5>Повідомлення</h5>
+                <div id="message">
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>Контакти</h2>
+            <div class="wraper-footer">
+                <div id="contacts" class="wraper-contacts">
+                    <p>
+                        <strong>Ігор Мочерад</strong>
+                    </p>
+                    <p>
+                        <strong>Електронна пошта:</strong>
+                        mocherad86@gmail.com
+                    </p>
+                    <p>
+                        <strong>Тел:</strong>
+                        09711112334
+                    </p>
+                </div>
+                <div class="wraper-form-textarea">
+                    <form>
+                        <label>Ваше ім'я:
+                            <input type="text" id="name" name="name" placeholder="ім'я">
+                        </label>
+                        <textarea name="question" id="questions" cols="30" rows="10">Оставити коментар на саті</textarea>
+                        <br>
+                        <button id="but-coment">Відправити</button>
+                    </form>
+                </div>
             </div>
-            <div class="wraper-form-textarea">
-                <form method="post" action="https://formspree.io/mocherad86@gmail.com">
-                    <textarea name="question" id="questions" cols="30" rows="10">Запитання до нас</textarea>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-            </div>
-        </div>
-        <small>© Асоціація Блогерів України (АБУ), 2018</small>
-    </footer>
-</body>
+            <small>© Асоціація Блогерів України (АБУ), 2018</small>
+        </footer>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
 </html>

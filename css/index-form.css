@@ -1,0 +1,114 @@
+.wraper-modal-login{
+    display: none;
+    margin: 0;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 3%;
+    z-index: 1;
+}
+.wraper-modal-login .wraper-form{
+    width: 35%;
+    min-width: 280px;
+    height: 390px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    
+}
+.login-form{
+     margin-top: 10px;
+}
+
+.login-form label{
+    display: block;
+   margin: 20px 1% 0 1%;
+}
+.login-form label input{
+    width: 100%;
+}
+.login-form a{
+    display: inline-block;
+    font-size: 10pt;
+    margin: 5px 0 0 2%;
+}
+.wraper-icon-login{
+   font-size: 18pt;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5%; 
+}
+
+.wraper-modal-signUp{
+    display: none;
+    height: 100vh;
+    margin: 0;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 3%;
+    z-index: 1;
+    
+}
+.wraper-modal-signUp .wraper-form{
+    width: 35%;
+    min-width: 280px;
+    height: 550px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.wraper-from-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.wraper-from-header h5{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.wrap-icon-signUp{
+    font-size: 18pt;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.sign-up-form{
+    margin-top: 10px;
+}
+.sign-up-form label{
+    display: block;
+    margin: 5px 1% 0 1%;
+}
+.sign-up-form label input{
+    width: 100%;
+}
+.footer-form{
+    height: 36px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-form p{
+    font-size: 14pt;
+    color: blue;
+    margin-left: 2%;
+    cursor: pointer;
+    
+}
+.footer-form p:hover{
+    font-weight: bold;
+    font-size: 15pt;
+}
+.footer-form input{
+    width: 150px;
+    margin-right: 2%;
+}
+.activeForm{
+    display: block;
+}
