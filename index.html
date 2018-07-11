@@ -139,11 +139,13 @@
                             <a href="getTranschIMF.html">
                                 <img src="img/news/news-transch.jpg" alt="Гроші траншу МВФ" title="Гроші від МВФ">Для отримання траншу МВФ потрібно...
                             
+                            
                             </a>
                         </div>
                         <div class="block">
                             <a href="spainMorocco.html">
                                 <img src="img/news/news-football.jpg" alt="Іспанія зіграла в нічию з Марокко" title="Іспанія-Марокко">ЧС-2018 Іспанія – Марокко: "червона фурія" зіграла в...
+                            
                             
                             </a>
                         </div>
@@ -158,17 +160,20 @@
                             <a href="eurovision.html">
                                 <img src="img/news/news-muzic.jpg" alt="Євробачення" title="де відбудеться Євробачення">Пісенний конкурс Євробачення у 2019 відбудеться...
                             
+                            
                             </a>
                         </div>
                         <div class="block three-blocks">
                             <a href="harleyDavidson.html">
                                 <img src="img/news/news-harleyDavidson.jpg" alt="Значок Харлей Девідсон" title="Девідсон має намір перенести своє виробництво">Харлей Девідсон має намір перенести своє виробництво в Європу через...
                             
+                            
                             </a>
                         </div>
                         <div class="block three-blocks">
                             <a href="coctail.html">
                                 <img src="img/news/news-coctail.jpg" alt="Коктель з фруктами" title="Як приготувати ефективний коктейль">Як приготувати ефективний коктейль для схудення...
+                            
                             
                             </a>
                         </div>
@@ -183,6 +188,7 @@
                             <a href="runner.html">
                                 <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
                             
+                            
                             </a>
                         </div>
                     </div>
@@ -196,23 +202,27 @@
                             <a href="runner.html">
                                 <img src="img/news/news-runner.jpg" alt="Бігун біжить по сходах" title="Коли краще бігати">Лікар розповів, коли найкраще бігати – зранку чи ввечері...
                             
+                            
                             </a>
                         </div>
                         <div class="block">
                             <a href="apple.html">
                                 <img src="img/news/news-apple.jpg" alt="Телефон apple" title="apple може презентувати новий бюджетний">Apple може презентувати новий бюджетний iPhone 9...
                             
-                            </a>
-                        </div>
-                        <div class="block">
-                            <a href="nigeriaArgentina.html">
-                                <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
                             
                             </a>
                         </div>
                         <div class="block">
                             <a href="nigeriaArgentina.html">
                                 <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            
+                            
+                            </a>
+                        </div>
+                        <div class="block">
+                            <a href="nigeriaArgentina.html">
+                                <img src="img/news/news-cup.jpg" alt="Логотип кубка світу" title="Епл може презентувати новий бюджетний">Нігерія – Аргентина: прогноз на матч Чемпіонату світу...
+                            
                             
                             </a>
                         </div>
@@ -259,10 +269,8 @@
                 </div>
             </section>
             <section>
-                <h5>Повідомлення</h5>
-                <div id="message">
-                    
-                </div>
+                <h5>Коментарі</h5>
+                <div id="message" class="block-message"></div>
             </section>
         </main>
         <footer>
@@ -275,26 +283,34 @@
                     <p>
                         <strong>Електронна пошта:</strong>
                         mocherad86@gmail.com
+                    
                     </p>
                     <p>
                         <strong>Тел:</strong>
                         09711112334
+                    
                     </p>
                 </div>
                 <div class="wraper-form-textarea">
                     <form>
-                        <label>Ваше ім'я:
-                            <input type="text" id="name" name="name" placeholder="ім'я">
+                        <label>
+                            Ваше ім'я:
+                            <input type="text" id="name" name="name" placeholder="ім'я" required>
                         </label>
-                        <textarea name="question" id="questions" cols="30" rows="10">Оставити коментар на саті</textarea>
-                        <br>
-                        <button id="but-coment">Відправити</button>
+                        <label class="block-questions">
+                            <p>Ваше запитання: </p>
+                            <textarea name="question" id="questions" cols="90" rows="10" placeholder="Оставити коментар на саті"></textarea>
+                            <br>
+                            <button id="but-coment">Відправити</button>
+                        </label>
                     </form>
                 </div>
             </div>
             <small>© Асоціація Блогерів України (АБУ), 2018</small>
         </footer>
         <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </body>
 </html>

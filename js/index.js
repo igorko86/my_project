@@ -21,22 +21,29 @@ function showLogin(){
   document.querySelector(".wraper-modal-login").classList.add("activeForm");
 }
 let timer = setTimeout(function(){
-    makeElement();
-    fetch("modal.html").then(response => response.text()).then( modal => document.querySelector(".modal-fetch").innerHTML = modal)
-    $('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
+    let bool = true; 
+    if(bool){
+        $('#exampleModal').modal("show");  
+    }
+    document.querySelector("#hideBootSTModal").onclick = function(){
+        $("#exampleModal").modal("hide");
+        bool = false;
+    }
+    
 }, 4000);
+function getFetchHtml(){
+     fetch("modal.html").then(response => response.text()).then( modal => document.querySelector(".modal-fetch").innerHTML = modal);
+}
+getFetchHtml();
 function makeElement(){
     const elDiv = document.createElement("div");
     elDiv.classList.add("modal-fetch");
     document.querySelector("body").appendChild(elDiv);
+}
+makeElement();
+
+function hideBootSTModal(){
+    $("#exampleModal").modal('hide');
 }
 let arrUser = [];
 if(localStorage.getItem("messages") != undefined){
@@ -49,20 +56,25 @@ document.querySelector("#but-coment").onclick = function(e){
     const elTexterea = document.querySelector("#questions");
     let userName = elInp.value;
     let message = elTexterea.value;
-    let users = {};
-    users.name = userName;
-    users.message = message;
-    let i = arrUser.length;
-    arrUser[i] = users;
-    showMessage();
-    localStorage.setItem("messages", JSON.stringify(arrUser));
-    elInp.value = "";
-    elTexterea.value = "";
+    if(userName != ""){
+        let users = {};
+        users.name = userName;
+        users.message = message;
+        let i = arrUser.length;
+        arrUser[i] = users;
+        showMessage();
+        localStorage.setItem("messages", JSON.stringify(arrUser));
+        elInp.value = "";
+        elTexterea.value = "";
+    }else{
+        
+    }
+    
 }
 function showMessage(){
     let out = '';
     for(let key in arrUser){
-       out += arrUser[key].name +"<br>"+ arrUser[key].message+"<br>" ; 
+       out += "<p class='user-name'>"+arrUser[key].name+"</p>" + "<p class='user-message'>"+arrUser[key].message+"</p>"; 
     }
     document.querySelector("#message").innerHTML = out;
 }

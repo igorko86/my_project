@@ -189,6 +189,10 @@ main article .wraper-block .block a:hover{
 	margin: 0 auto;
 	border: 1px solid grey;
 }
+.block-message .user-name{
+	text-decoration:  underline;
+	color: blue;
+}
 
 /** video **/
 
@@ -215,6 +219,9 @@ main article .wraper-block .block a:hover{
 	padding-bottom: 12px;
 	box-shadow: 0 0 20px black;
 }
+.block-message{
+	margin: 10px 0 10px 3%;
+}
 /** footer **/
 
 footer{
@@ -240,8 +247,17 @@ footer h2{
 	font-size: 14pt;
 }
 .wraper-form-textarea{
-	width: 280px;
-	margin: 0 auto;
+	width: 100%;
+}
+.wraper-form-textarea form{
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.wraper-form-textarea label textarea{
+	    max-width: 90%;
 }
 footer small{
 	display: block;
@@ -322,12 +338,15 @@ footer small{
 	}
 	.wraper-header .header-foto .img{
 		position: absolute;
-		left: 30%;
+		left: auto;
+		
 		top: -210px;
 	}
 		.wraper-header  .burger{
 		font-size: 18pt;
 		margin: 0 ;
+		margin-left: 5%;
+		margin-bottom: -5px;
 		
 	}
 	.wraper-header .header-foto h1{
