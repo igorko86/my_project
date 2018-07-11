@@ -256,8 +256,11 @@ footer h2{
 }
 
 
-.wraper-form-textarea label textarea{
+.wraper-form-textarea label textarea {
 	    max-width: 90%;
+}
+.wraper-form-textarea  button{
+	width: 96px;
 }
 footer small{
 	display: block;
